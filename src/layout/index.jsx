@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import Frame from '../components/Frame'
+import Frame from '../components/Frame/'
 import Draggable from 'react-draggable';
+import { App } from 'grommet';
+import MyHeader from './MyHeader';
+import Content from './Content';
 
 class MainLayout extends Component {
-  render() {
+  render () {
     return (
-      <div className="app">
-        <div className="app-header">
-          <h2>MyPictureWall</h2>
-        </div>
-        <div className="content">
-            <Frame width={100} height={100} />
-        </div>
-      </div>
+      <App>
+        <MyHeader />
+        <Content />
+      </App>
     );
   }
 }

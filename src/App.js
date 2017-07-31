@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import MainLayout from './layout'
+import MainLayout from './layout';
+import 'grommet/grommet-hpe.min.css';
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <MainLayout />
     );
