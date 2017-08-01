@@ -1,6 +1,7 @@
 import React from 'react';
 import { Split, Box } from 'grommet';
-import Sets from '../../components/Sets/'
+import Sets from '../../components/Sets/';
+import MyHeader from './Header/'
 
 const Content = (props) => {
   return (
@@ -10,9 +11,11 @@ const Content = (props) => {
         align='center'
         pad='medium' />
       <Box
+        pad='none'
         justify='end'
         align='start'
-        pad='medium'>
+        full='vertical'>
+        <MyHeader />
         <Sets />
       </Box>
     </Split>

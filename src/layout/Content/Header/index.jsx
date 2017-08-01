@@ -5,7 +5,7 @@ const MyHeader = (props) => {
   return (
     <Header splash={false}>
       <Title>
-        Sample Title
+        My Picture Wall
       </Title>
     </Header>
   )
